@@ -8,9 +8,9 @@ RUN    microdnf install -y epel-release \
     && microdnf remove -y \
          libsemanage \
          shadow-utils \
-    && mkdir /var/run/{nut,upsmon} \
-    && chown nut /var/run/{nut,upsmon} \
-    && chmod o-rwx /var/run/{nut,upsmon} \
+    && mkdir /etc/nut /var/run/{nut,upsmon} \
+    && chown nut /etc/nut /var/run/{nut,upsmon} \
+    && chmod o-rwx /etc/nut /var/run/{nut,upsmon} \
     && chmod a-s \
          /usr/bin/* \
          /usr/sbin/* \
