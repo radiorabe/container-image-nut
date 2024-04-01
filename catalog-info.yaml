@@ -10,6 +10,8 @@ metadata:
   links:
     - url: https://networkupstools.org/
       title: Network UPS Tools Homepage
+    - url: https://wiki.rabe.ch/Network_UPS_Tools
+      title: RaBe Wiki Documentation
 spec:
   type: container
   lifecycle: experimental
