@@ -4,7 +4,9 @@
 
 ## Usage
 
-Run it as you please. Not that this image does not generate any automated configuration.
+Run it as you please.
+
+Note that this image does not generate any automated configuration. You can inject config by putting it into the `/var/tmp/nut-config/` directory which gets copied to `/etc/nut` during startup.
 
 ## Release Management
 
