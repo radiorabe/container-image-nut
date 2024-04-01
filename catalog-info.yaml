@@ -1,0 +1,18 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nut
+  description: Netowrk UPS Tools on UBI9
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: radiorabe/container-image-nut
+  links:
+    - url: https://networkupstools.org/
+      title: Network UPS Tools Homepage
+spec:
+  type: container
+  lifecycle: experimental
+  owner: it-reaktion
+  dependsOn:
+    - component:default/rabe-ubi9-minimal
