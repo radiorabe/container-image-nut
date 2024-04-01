@@ -349,7 +349,8 @@
 <h1 id="rabe-nut-image">RaBe NUT Image</h1>
 <p><a href="https://networkupstools.org/">Network UPS Tools</a> container image based on <a href="https://github.com/radiorabe/container-image-ubi9-minimal">RaBe UBI9 Minimal</a>.</p>
 <h2 id="usage">Usage</h2>
-<p>Run it as you please. Not that this image does not generate any automated configuration.</p>
+<p>Run it as you please.</p>
+<p>Note that this image does not generate any automated configuration. You can inject config by putting it into the <code>/var/tmp/nut-config/</code> directory which gets copied to <code>/etc/nut</code> during startup.</p>
 <h2 id="release-management">Release Management</h2>
 <p>The CI/CD setup uses semantic commit messages following the <a href="https://www.conventionalcommits.org/en/v1.0.0/">conventional commits standard</a>.
 The workflow is based on the <a href="https://radiorabe.github.io/actions/">RaBe shared actions</a>
