@@ -1,12 +1,12 @@
-FROM ghcr.io/radiorabe/ubi9-minimal:0.7.2
+FROM ghcr.io/radiorabe/ubi9-minimal:0.7.3
 
 RUN    microdnf install -y epel-release \
     && microdnf install -y \
          nut \
     && microdnf clean all \
-    && mkdir /etc/nut /var/run/{nut,upsmon} \
-    && chown nut /etc/nut /var/run/{nut,upsmon} \
-    && chmod o-rwx /etc/nut /var/run/{nut,upsmon} \
+    && mkdir /etc/nut /var/run/upsmon \
+    && chown nut /etc/nut /var/run/upsmon \
+    && chmod o-rwx /etc/nut /var/run/upsmon \
     && chmod a-s \
          /usr/bin/* \
          /usr/sbin/* \
