@@ -1,4 +1,4 @@
-FROM ghcr.io/radiorabe/ubi9-minimal:0.9.1
+FROM ghcr.io/radiorabe/ubi9-minimal:0.10.1
 
 RUN    microdnf install -y epel-release \
     && microdnf install -y \
