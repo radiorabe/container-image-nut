@@ -20,7 +20,7 @@ jobs:
       cosign-verify: true
   release-mkdocs:
     permissions:
-      contents: write # 
+      contents: write # Required to push the gh-pages branch for documentation deployment
     uses: radiorabe/actions/.github/workflows/release-mkdocs.yaml@479996126a091287dc3fd349786f6f8a6dd1b23c # v0.42.0
   github-actions:
     permissions:
